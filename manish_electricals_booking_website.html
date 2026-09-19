@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manish Electricals | Book a Visit or Electrical Service</title>
+<style>
+:root{--yellow:#f7c948;--dark:#111827;--muted:#64748b;--light:#f8fafc}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--light);color:var(--dark);line-height:1.6}
+header{background:#111827;color:white;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;gap:15px;position:sticky;top:0;z-index:5}
+.logo{font-weight:800;font-size:1.15rem}.logo span{color:var(--yellow)}
+nav a{color:white;text-decoration:none;margin-left:18px;font-size:.92rem}
+.hero{background:linear-gradient(120deg,#111827 0%,#263449 100%);color:white;padding:72px 6% 65px;display:grid;grid-template-columns:1.3fr 1fr;gap:35px;align-items:center}
+.eyebrow{color:var(--yellow);font-weight:700;text-transform:uppercase;letter-spacing:1.5px;font-size:.8rem}
+h1{font-size:clamp(2.1rem,5vw,4.1rem);line-height:1.08;margin:12px 0 18px}
+.hero p{color:#dbe4ef;max-width:580px}.btn{display:inline-block;background:var(--yellow);color:#111827;padding:13px 20px;border-radius:8px;text-decoration:none;font-weight:800;border:0;cursor:pointer}
+.btn.secondary{background:transparent;color:white;border:1px solid #64748b;margin-left:8px}
+.hero-card{background:white;color:var(--dark);padding:25px;border-radius:18px;box-shadow:0 15px 40px #0004}.hero-card h3{margin-top:0}
+section{padding:55px 6%}.section-head{text-align:center;max-width:650px;margin:0 auto 30px}.section-head h2{font-size:2rem;margin:0 0 8px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:white;border-radius:14px;padding:24px;box-shadow:0 5px 20px #0f172a0b;border:1px solid #e2e8f0}.icon{font-size:2rem}
+.booking{background:#eaf0f6}.form-wrap{max-width:850px;margin:auto;background:white;border-radius:18px;padding:28px;box-shadow:0 8px 30px #0f172a12}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px}label{font-weight:700;font-size:.9rem}input,select,textarea{width:100%;margin-top:6px;padding:12px;border:1px solid #cbd5e1;border-radius:8px;font:inherit}textarea{min-height:110px;resize:vertical}.full{grid-column:1/-1}.choice{display:flex;gap:10px;flex-wrap:wrap}.choice label{border:1px solid #cbd5e1;padding:10px 13px;border-radius:8px;font-weight:600;cursor:pointer}.choice input{width:auto;margin:0}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:stretch}.contact-box{background:#111827;color:white;padding:28px;border-radius:16px}.contact-box a{color:var(--yellow)}footer{background:#0b1120;color:#cbd5e1;text-align:center;padding:24px;font-size:.9rem}
+@media(max-width:760px){nav{display:none}.hero,.contact{grid-template-columns:1fr}.cards{grid-template-columns:1fr}form{grid-template-columns:1fr}.full{grid-column:auto}.hero{padding-top:45px}}
+</style>
+</head>
+<body>
+<header><div class="logo">MANISH <span>ELECTRICALS</span></div><nav><a href="#services">Services</a><a href="#booking">Book Now</a><a href="#contact">Contact</a></nav></header>
+
+<section class="hero">
+<div><div class="eyebrow">Electrical supplies & service requests</div><h1>Powering homes and businesses in Kalimpong.</h1><p>Visit our electrical supply store or request an electrical service appointment. Send us your details and our team will contact you to confirm.</p><a class="btn" href="#booking">Book a Visit / Service</a><a class="btn secondary" href="tel:+919832404770">Call Now</a></div>
+<div class="hero-card"><h3>Manish Electricals</h3><p>📍 10th Mile Fatak, beside Axis ATM, Lower Gumba Hatta, Kalimpong, West Bengal 734301</p><p>📞 <strong>+91 98324 04770</strong></p><p>🕘 Mon–Sat: 8:40 AM–7:30 PM<br>Sunday: 10:00 AM–7:00 PM</p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Manish+Electricals+10th+Mile+Fatak+Kalimpong" target="_blank">Get Directions</a></div>
+</section>
+
+<section id="services"><div class="section-head"><h2>How can we help?</h2><p>Choose what you need and submit a request through our booking form.</p></div>
+<div class="cards"><div class="card"><div class="icon">🏪</div><h3>Shop Visit</h3><p>Plan a visit to our electrical supply store for product enquiries and purchases.</p></div><div class="card"><div class="icon">⚡</div><h3>Electrical Services</h3><p>Request electrical repair, installation, maintenance, or an on-site service consultation.</p></div><div class="card"><div class="icon">📋</div><h3>Product Enquiry</h3><p>Tell us what electrical product or material you are looking for, and we can respond.</p></div></div></section>
+
+<section class="booking" id="booking"><div class="section-head"><h2>Book a Visit or Request a Service</h2><p>Complete the form. Your request will open in WhatsApp so we can confirm availability.</p></div>
+<div class="form-wrap"><form id="bookingForm">
+<div><label for="name">Full Name *</label><input id="name" required placeholder="Your name"></div>
+<div><label for="phone">Phone Number *</label><input id="phone" required type="tel" placeholder="Your phone number"></div>
+<div class="full"><label>What do you need? *</label><div class="choice"><label><input type="radio" name="type" value="Shop visit" required> Shop visit</label><label><input type="radio" name="type" value="Electrical service"> Electrical service</label><label><input type="radio" name="type" value="Product enquiry"> Product enquiry</label></div></div>
+<div><label for="date">Preferred Date *</label><input id="date" required type="date"></div>
+<div><label for="time">Preferred Time *</label><input id="time" required type="time"></div>
+<div class="full"><label for="address">Service Address (if applicable)</label><input id="address" placeholder="Enter your address"></div>
+<div class="full"><label for="details">Requirements / Message</label><textarea id="details" placeholder="Describe the product or electrical work you need..."></textarea></div>
+<div class="full"><button class="btn" type="submit">Send Booking Request on WhatsApp →</button></div>
+</form></div></section>
+
+<section id="contact"><div class="section-head"><h2>Visit or contact us</h2><p>We look forward to helping you with your electrical needs.</p></div><div class="contact"><div class="contact-box"><h3>Manish Electricals</h3><p>10th Mile Fatak, beside Axis ATM<br>Lower Gumba Hatta, Kalimpong<br>West Bengal 734301</p><p>Phone: <a href="tel:+919832404770">+91 98324 04770</a></p><a class="btn" href="https://wa.me/919832404770" target="_blank">Chat on WhatsApp</a></div><div class="contact-box"><h3>Opening Hours</h3><p>Monday–Saturday: 8:40 AM–7:30 PM</p><p>Sunday: 10:00 AM–7:00 PM</p><p>Booking requests are subject to confirmation by our team.</p></div></div></section>
+<footer>© 2026 Manish Electricals, Kalimpong. All rights reserved.</footer>
+<script>
+document.getElementById('date').min=new Date().toISOString().split('T')[0];
+document.getElementById('bookingForm').addEventListener('submit',function(e){
+e.preventDefault();
+const type=document.querySelector('input[name="type"]:checked').value;
+const msg=`Hello Manish Electricals,%0A%0AI would like to make a booking/request.%0A%0AName: ${encodeURIComponent(document.getElementById('name').value)}%0APhone: ${encodeURIComponent(document.getElementById('phone').value)}%0ARequest type: ${encodeURIComponent(type)}%0APreferred date: ${document.getElementById('date').value}%0APreferred time: ${document.getElementById('time').value}%0AAddress: ${encodeURIComponent(document.getElementById('address').value)}%0ADetails: ${encodeURIComponent(document.getElementById('details').value)}%0A%0APlease confirm my request.`;
+window.open('https://wa.me/919832404770?text='+msg,'_blank');
+});
+</script>
+</body></html>
